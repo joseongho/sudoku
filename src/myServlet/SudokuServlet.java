@@ -51,6 +51,9 @@ public class SudokuServlet extends HttpServlet {
 		mySolveSudoku = new SolveSudoku();
 
 		sudokuArray = mySolveSudoku.writeData(request);
+		
+		sudokuArray=mySolveSudoku.solveData(sudokuArray);
+		
 		request.setAttribute("s0", sudokuArray);
 		doGet(request, response);
 	}

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>sudoku 모르는 숫자는 -1</p>
+	<p>sudoku 모르는 숫자는 0</p>
 	<form action="SudokuServlet" method="post">
 		<table>
 			<%
@@ -18,7 +18,7 @@
 				<%
 					for (int j = 0; j < 9; j++) {
 				%>
-				<td><input type="number" max="9" min="-1" value="-1"
+				<td><input type="number" max="9" min="0" value="0"
 					name="<%=k++%>"></td>
 				<%
 					}

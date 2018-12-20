@@ -1,19 +1,12 @@
 package myDto;
 
-import java.util.Set;
-
 public class SudokuData {
 	private int answer;
-	private Set<Integer> guessNumber;
+	private int banNumber;
 
 	public SudokuData(int answer) {
 		super();
 		this.answer = answer;
-	}
-
-	public SudokuData(Set<Integer> guessNumber) {
-		super();
-		this.guessNumber = guessNumber;
 	}
 
 	public int getAnswer() {
@@ -24,12 +17,12 @@ public class SudokuData {
 		this.answer = answer;
 	}
 
-	public Set<Integer> getGuessNumber() {
-		return guessNumber;
+	public int getBanNumber() {
+		return banNumber;
 	}
 
-	public void setGuessNumber(Set<Integer> guessNumber) {
-		this.guessNumber = guessNumber;
+	public void setBanNumber(int i) {
+		this.banNumber = i;
 	}
 
 }
