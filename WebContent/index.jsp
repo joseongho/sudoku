@@ -13,18 +13,11 @@
 			<%
 				int k = 0;
 				for (int i = 0; i < 9; i++) {
-			%>
-			<tr>
-				<%
+					out.print("<tr>");
 					for (int j = 0; j < 9; j++) {
-				%>
-				<td><input type="number" max="9" min="0" value="0"
-					name="<%=k++%>"></td>
-				<%
+						out.print("<td><input type='number' max='9' min='0' value='0'name='" + k++ + "'></td>");
 					}
-				%>
-			</tr>
-			<%
+					out.print("</tr>");
 				}
 			%>
 		</table>

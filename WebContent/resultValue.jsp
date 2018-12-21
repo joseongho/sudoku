@@ -14,20 +14,14 @@
 			SudokuData[] myData;
 			int k = 0;
 			for (int i = 0; i < 9; i++) {
-		%>
-		<tr>
-			<%
+				out.print("<tr>");
 				for (int j = 0; j < 9; j++) {
-						myData = (SudokuData[]) request.getAttribute("s0" );
-			%>
-			<td><%=myData[k].getAnswer()%></td>
-			<%
-				k++;
-					}
-			%>
-		</tr>
-		<%
-			}
+					myData = (SudokuData[]) request.getAttribute("s0");
+					out.print("<td>" + myData[k].getAnswer() + "</td>");
+					k++;
+				}
+				out.print("</tr>");
+			};
 		%>
 	</table>
 </body>
